@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="beitrag">
+
+<center>
+<table>
+    <tr>
+        <th>Datum</th>
+        <th>Betrag</th>
+        <th>Bemerkung</th>
+    </tr>
+{% for tank in tanken_list %}
+    <tr>
+        <td>{{ tanken.datum }}</td>
+        <td>{{ tanken.betrag }}</td>
+        <td>{{ tanken.bemerkung }}</td>
+    </tr>
+{% endfor %}
+</table>
+</center>
+</div>
+{% endblock content %}
